@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 70%;
+    height: 500px;
+    display: flex;
+    background-color:rgb(243, 247, 250);
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 30px;
+}
+.img{
+    background-image: url(../img/computer.jpg);
+    width: 50%;
+    height: 477px;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+input{
+    border: none;
+    width: 250px;
+    height: 35px;
+    font-size: 12px;
+    margin-top: 20px;
+    border-radius: 5px;
+
+}
+
+h2{
+    margin: 10px;
+}
+
+h6{
+    color: dimgray;
+    font-size: 10px;
+    display: inline-block;
+   
+}
+
+.btnSignin{
+    font-size:15px ;
+    background-color: skyblue;
+    color: white;
+    cursor: pointer;margin: 20px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.otherContinues{
+     text-align: center;
+     display: inline-block;
+}
+
+.otherContinues::before ,
+.otherContinues::after{
+    background-color: white;
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+
+.icons{
+    display: flex;
+    
+    justify-content: space-evenly;
+}
+a{
+    color:dimgray; ;
+}
+
+
+.msgEmial,
+.msgPassword{
+    color: red;
+    font-size: 8px;
+   
+}
+.msgSignIn{
+    color: green;
+    font-size: 10px;
+   
+}
+
+@media screen and (max-width:900px){
+    .container{
+        width: 100%;
+        display: inline;
+        padding: 0%;
+        margin: 0%;
+    }
+    
+}
+
+
+ @media screen and (max-width:900px){
+    .img{
+        width: 100%;
+        background-image: url(../img/computer\ -\ Copy.jpg);
+        height: 300px;
+        margin-top: 0%;
+        padding: 0%;
+        border-radius: 0%;
+    }
+    .formDiv{
+        width: 100%;
+        padding: 0%;
+    }
+
+    h6{
+        font-size: 15px;
+        margin: 20px;
+    }
+    h2{
+        font-size: 35px;
+        margin-top: 25px;
+    }
+
+    input{
+        
+    width: 70%;
+    height: 35px;
+    font-size: 15px;
+    margin: 30px;
+    border-radius: 5px;
+
+    }
+
+    #btnSignin{
+        font-size:25px ;
+    }
+
+    .icons{
+        width: 60%;
+        margin: auto;
+    }
+ }
+
+
+ @media screen and (max-width:500px){
+    .container{
+        width: 100%;
+        display: inline;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    input{
+        
+        width: 70%;
+        height: 35px;
+        font-size: 15px;
+        margin: 30px;
+        border-radius: 5px;
+    
+        }
+    
+        #btnSignin{
+            font-size:25px ;
+        }
+
+        h6{
+            font-size: 10px;
+            margin: 20px;
+        }
+        h2{
+            font-size: 25px;
+            margin-top: 25px;
+        }
+ }
